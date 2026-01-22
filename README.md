@@ -6,6 +6,7 @@ This guide provides step-by-step instructions to deploy and run a This React app
 Since React requires Node.js and npm, install them first:
 
 sudo apt update
+
 <img width="742" height="208" alt="image" src="https://github.com/user-attachments/assets/18da25d7-abd1-4f72-a6c8-c2fe6a6e9ad4" />
 
 
@@ -24,17 +25,28 @@ npm -v
 <img width="322" height="52" alt="image" src="https://github.com/user-attachments/assets/dd25961a-09d0-4d5a-a3a8-136d0788779a" />
 
 # 2. Install Nginx
+
 Update package lists and install Nginx:
 
 sudo apt install -y nginx
+
+<img width="596" height="191" alt="image" src="https://github.com/user-attachments/assets/da4c9e2b-ea27-486d-9c1d-9614ac023781" />
+
+
 Start and enable Nginx:
 
 sudo systemctl start nginx
 sudo systemctl enable nginx
+
+<img width="956" height="135" alt="image" src="https://github.com/user-attachments/assets/f9905ea6-f4b5-42fa-bd1b-d78d2b9b4ed6" />
+
 Check Nginx status:
 
 systemctl status nginx
-3. Clone the React Application from GitHub
+
+<img width="957" height="217" alt="image" src="https://github.com/user-attachments/assets/b87b8abc-8cd9-4026-8ca4-97cb159c8612" />
+
+# 3. Clone the React Application from GitHub
 Navigate to a temporary directory and clone the repository:
 
 git clone https://github.com/pravinmishraaws/my-react-app.git
