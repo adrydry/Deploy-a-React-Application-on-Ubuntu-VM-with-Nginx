@@ -46,14 +46,24 @@ systemctl status nginx
 
 <img width="957" height="217" alt="image" src="https://github.com/user-attachments/assets/b87b8abc-8cd9-4026-8ca4-97cb159c8612" />
 
+As we can see, our nginx application is up and running
+
+<img width="1206" height="318" alt="image" src="https://github.com/user-attachments/assets/87c895bf-b849-4949-8467-ffb6e7bf5a80" />
+
+
 # 3. Clone the React Application from GitHub
 Navigate to a temporary directory and clone the repository:
 
 git clone https://github.com/pravinmishraaws/my-react-app.git
 cd my-react-app
+
+<img width="736" height="207" alt="image" src="https://github.com/user-attachments/assets/3116dc9f-dd10-4dd5-b579-f5443a5c3254" />
+
 Open the App.js file
 
 Navigate to your React app’s source folder:
+
+<img width="917" height="86" alt="image" src="https://github.com/user-attachments/assets/3b90ee43-a928-425e-802d-4b41284eff92" />
 
 cd my-react-app/src
 Open the App.js file in a text editor:
