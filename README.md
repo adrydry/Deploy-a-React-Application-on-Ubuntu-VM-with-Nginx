@@ -66,27 +66,29 @@ Navigate to your React app’s source folder:
 <img width="917" height="86" alt="image" src="https://github.com/user-attachments/assets/3b90ee43-a928-425e-802d-4b41284eff92" />
 
 cd my-react-app/src
-Open the App.js file in a text editor:
-
-nano App.js
-(or use vi/vim if you prefer)
-
-Modify the content
+Open the App.js file in a text editor using vi and Modify the content
 
 <h2>Deployed by: <strong>Your Full Name</strong></h2>
 <p>Date: <strong>DD/MM/YYYY</strong></p>
 Update your details like: Your Full Name & Date
 
-4. Install Dependencies and Build the React App
+<img width="641" height="195" alt="image" src="https://github.com/user-attachments/assets/6562efb9-8138-464e-96d5-a3062e645af9" />
+
+
+# 4. Install Dependencies and Build the React App
 Install required dependencies:
 
 npm install
 Build the React application:
 
+<img width="462" height="37" alt="image" src="https://github.com/user-attachments/assets/c877c33b-1e84-46f9-b3df-c986f733116f" />
+
 npm run build
 This will generate a build/ folder with production-ready static files.
 
-5. Deploy Build Files to Nginx Web Directory
+<img width="763" height="231" alt="image" src="https://github.com/user-attachments/assets/78aaa936-e3a3-4409-8844-5e010ad83459" />
+
+# 5. Deploy Build Files to Nginx Web Directory
 Remove any existing files in the Nginx web directory:
 
 sudo rm -rf /var/www/html/*
@@ -97,7 +99,8 @@ Set proper permissions:
 
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
-6. Configure Nginx for React
+
+# 6. Configure Nginx for React
 Nginx configuration file:
 
 echo 'server {
@@ -116,21 +119,13 @@ echo 'server {
 Restart Nginx to apply the changes:
 
 sudo systemctl restart nginx
-7. Find Your Public IP and Access the Application
+
+# 7. Find Your Public IP and Access the Application
 Retrieve the public IP of your Ubuntu VM:
 
-curl ifconfig.me
-Now, students can access the React application in a browser using:
+Now, we can access the React application our public IP:
 
+<img width="781" height="497" alt="image" src="https://github.com/user-attachments/assets/b751300d-c897-40e8-8d38-7107971c550d" />
 http://<your-public-ip>
-For example, if the public IP is 203.0.113.25, visit:
 
-http://203.0.113.25
-8. Verify the Deployment
-Ensure Nginx is correctly serving the React app:
-
-curl <your-public-ip>
-If successful, your React app is live!
-
-Your React App is Now Live on Ubuntu with Nginx!
-Now your React application is deployed on an Ubuntu VM with Nginx, accessible from a public IP.
+Our React App is Now Live on Ubuntu with Nginx accessible from a public IP.
