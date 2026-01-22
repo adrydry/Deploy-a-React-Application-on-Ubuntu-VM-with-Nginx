@@ -126,6 +126,5 @@ Retrieve the public IP of your Ubuntu VM:
 Now, we can access the React application our public IP:
 
 <img width="781" height="497" alt="image" src="https://github.com/user-attachments/assets/b751300d-c897-40e8-8d38-7107971c550d" />
-http://<your-public-ip>
 
 Our React App is Now Live on Ubuntu with Nginx accessible from a public IP.
