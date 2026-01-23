@@ -129,3 +129,42 @@ Now, we can access the React application our public IP:
 
 
 Our React App is Now Live on Ubuntu with Nginx accessible from a public IP.
+
+# NETWORKING & ACCESS CHECKS (PRODUCTION BASICS)
+
+ **IPs and interfaces (helps confirm network is up)**:ip a
+
+<img width="852" height="237" alt="image" src="https://github.com/user-attachments/assets/3605c5f8-857f-4355-af1c-d20809837191" />
+
+
+Default route (proves you can reach the internet via gateway):
+ip route
+DNS resolution (proves name → IP works):
+dig pravinmishra.com +short
+(or)
+host pravinmishra.com
+Connectivity test (quick packet-level check):
+ping -c 4 thecloudadvisory.com
+Listening ports + owning process (what is actually exposed):
+sudo ss -tulpen
+Firewall status (basic security signal, even if not configured):
+sudo ufw status
+(if ufw is not installed: write “ufw not installed”)
+Evidence note:
+For output, highlight/mention:
+Is nginx listening on 0.0.0.0:80?
+Is SSH on 22?
+Any unexpected open ports?
+PHASE 2: SERVICE HEALTH + PROCESS VALIDATION (SYSTEMD STYLE)
+
+
+Assignment 4: Deploy a Professional Website (Confidence Project)
+
+LinkedIn Post (MANDATORY)
+Write a short LinkedIn post about what you achieved this week. Include:
+Your application URL
+3–5 lines: what you deployed + what you learned
+1 screenshot proof (app page showing your Full Name)
+Paste LinkedIn Post URL here: ___________________________
+Paste screenshot of LinkedIn post here:
+
